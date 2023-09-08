@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card-content>
+Aquí podrá seleccionar la opción que desea realizar
+  </ion-card-content>
+
+  <div class="button-container">
+    <ion-button (click)="NavCurses()">Click para ver los cursos</ion-button>
+    <ion-button (click)="NavStudents()">Click para ver los estudiantes</ion-button>
+  </div>
+
+</ion-content>

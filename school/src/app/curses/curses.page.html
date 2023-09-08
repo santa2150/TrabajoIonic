@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>curses</ion-title>
+    <ion-title>cursos</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,9 +10,26 @@
       <ion-title size="large">curses</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <div>
-    
- <ion-button (click)="back()">Volver </ion-button>
+    <ion-button (click)="back()">Volver </ion-button>
   </div>
 
+  <ion-card-content>
+    Aquí podrá seleccionar la opción que desea realizar
+  </ion-card-content>
+
+
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let curses of cursesData">
+        <ion-label>{{ curses.name }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+
+  <div>
+    <ion-button>Conoce cuantos cursos tenemos</ion-button>
+  </div>
 </ion-content>
